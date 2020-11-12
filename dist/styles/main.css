@@ -1018,6 +1018,12 @@ b {
 .allergy .container-sm a {
   color: #1f84b8;
   text-decoration: underline;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.allergy .container-sm a:hover {
+  opacity: 0.5;
 }
 
 .allergy__block {
@@ -1030,6 +1036,14 @@ b {
   position: relative;
   min-height: 400px;
   margin: 0 20px 40px;
+}
+
+.allergy__block a {
+  margin: auto auto -40px;
+}
+
+.allergy__block a:hover .allergy__text {
+  margin-bottom: 10px;
 }
 
 .allergy__bg {
@@ -1054,20 +1068,21 @@ b {
   align-items: center;
   width: 300px;
   height: 186px;
-  margin: auto auto -40px;
   padding: 25px 15px 15px;
   background-color: #fff;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   text-align: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .allergy__text .title-sm {
   margin-bottom: 15px;
 }
 
-.allergy__text a {
+.allergy__text .link-next {
   margin-top: auto;
 }
 
@@ -1510,9 +1525,15 @@ b {
   margin: 0 5px;
 }
 
+.footer__share a:hover img {
+  opacity: 0.5;
+}
+
 .footer__share img {
   width: 30px;
   height: 30px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .footer__share small {
@@ -1565,9 +1586,15 @@ b {
   padding-right: 45px;
 }
 
+.footer__search button:hover svg {
+  opacity: 0.5;
+}
+
 .footer__search svg {
   width: 42px;
   height: 46px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .footer__mid {
@@ -1599,6 +1626,10 @@ b {
 .footer__mid li {
   font-size: 14px;
   margin: 10px 0;
+}
+
+.footer__mid a:hover {
+  text-decoration: underline;
 }
 
 .footer__bottom {
